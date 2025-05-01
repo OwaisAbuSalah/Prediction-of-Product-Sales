@@ -56,6 +56,36 @@ For this dataset, there were 8523 rows and 12 columns.
 
 * Factors like Item_Weight, Item_Visibility, and Outlet_Establishment_Year have minimal impact on sales, based on this dataset.
 
+## 🔍 Model Explainability
+
+### 📈 Linear Regression
+![تنزيل (1)](https://github.com/user-attachments/assets/890e5230-c5d9-408a-acb8-a9bece6526f3)
+
+
+**Top 3 Most Impactful Features:**
+- `num_Item_MRP`: Higher prices increase sales value, even with fewer items sold..
+- `cat_Outlet_Identifier_OUT027`: This store sells more, likely due to a good location or size.
+- `cat_Outlet_Type_Supermarket Type3`: These outlets perform better, possibly from more variety or traffic.
+
+### 🌳 Random Forest (Tuned)
+![بالىرلا](https://github.com/user-attachments/assets/39c9fed8-cbbf-47b1-b64d-f731a84e20e2)
+
+
+**Top 5 Important Features:**
+- `num__Item_MRP` : Higher item prices often lead to higher sales value.
+- `cat__Outlet_Type_Grocery Store` : Grocery stores tend to sell more than other outlet types.
+- `cat__Outlet_Identifier_OUT027` : This specific outlet usually has high sales.
+- `num__Item_Visibility` :Items that are easier to see get bought more.
+- `num__Item_Weight` :Heavier items may suggest bigger packages, attracting buyers.
+
+### ✅ Final Recommendations
+- `Set Smart Prices` : The price of an item (MRP) is the biggest factor in sales. Try discounts or special offers to boost sales. 
+- `Focus on Grocery Stores` : Grocery store outlets sell more. You might want to open more of them or improve the ones you already have.
+- `Learn from Top Stores` : Some outlets (like OUT027) do really well. Look at what they’re doing right and use those ideas in other stores.
+- `Make Products Easy to See` : Items that are easier to see sell better. Put popular items in clear, front-facing spots.
+
+
+
   
 
     
