@@ -56,6 +56,59 @@ For this dataset, there were 8523 rows and 12 columns.
 
 * Factors like Item_Weight, Item_Visibility, and Outlet_Establishment_Year have minimal impact on sales, based on this dataset.
 
+# CRISP-DM Phase 6 - Deployment
+
+![CVB](https://github.com/user-attachments/assets/59198110-92c8-4e4d-89ba-a161c8594012)
+![NNBV](https://github.com/user-attachments/assets/c5a8964f-1d63-42b4-9dcc-85a5167dfebc)
+![XCVBXC](https://github.com/user-attachments/assets/9d494f7e-cf86-4e70-9123-43157e2aef35)
+
+
+## 🤖 Model Summary and Evaluation
+
+I built and tested three models to predict the target value:
+
+### 1. **Linear Regression**
+- **Training R²**: 0.56  
+- **Testing R²**: 0.57  
+- **Training RMSE**: 1139.10  
+- **Testing RMSE**: 1092.86  
+
+This is a basic model that's easy to understand. It gave okay results but wasn't very accurate. It missed a lot of the patterns in the data.
+
+---
+
+### 2. **Random Forest (Default Settings)**
+- **Training R²**: 0.94  
+- **Testing R²**: 0.56  
+- **Training RMSE**: 428.36  
+- **Testing RMSE**: 1102.51  
+
+This model did really well on the training data but not on the testing data. That means it **overfit** — it learned the training data too well and didn’t perform well on new data.
+
+---
+
+### 3. **Random Forest (Tuned)**
+- **Training R²**: 0.72  
+- **Testing R²**: 0.59  
+- **Training RMSE**: 917.73  
+- **Testing RMSE**: 1063.09  
+
+After adjusting the model settings (called tuning), it worked better. It didn’t overfit, and it performed more consistently on both training and testing data.
+
+---
+
+### ✅ Final Model Choice:
+The **Tuned Random Forest** model gave the best results overall. It was the most balanced and accurate model, so it's the one I recommend using.
+
+
+
+
+
+
+
+
+
+
 ## 🔍 Model Explainability
 
 ### 📈 Linear Regression
